@@ -71,6 +71,9 @@
   .header-layout {
     min-height: 150px;
   }
+  .header-title {
+    font-size: 36px;
+  }
   .navbar {
     grid-template-columns: 1fr;
     justify-self: end;

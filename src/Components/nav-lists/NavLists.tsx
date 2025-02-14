@@ -60,7 +60,7 @@ export default function NavLists() {
           onClick={() => setCompanyOpen(!isCompanyOpen)}
           className="menu-item"
         >
-          <h1>Company</h1>
+          Company
           <img
             className="icon-nav"
             src={isCompanyOpen ? arrowUp : arrowDown}
@@ -72,6 +72,7 @@ export default function NavLists() {
             <li className="dropdown-item-company">History</li>
             <li className="dropdown-item-company">Our Team</li>
             <li className="dropdown-item-company">Blog</li>
+            <li>vase kole omr khandehat pelane</li>
           </ul>
         )}
       </li>
