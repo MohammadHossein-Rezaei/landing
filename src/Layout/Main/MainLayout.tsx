@@ -1,5 +1,6 @@
 import "./mainLayout.css";
 import { useMediaQuery } from "react-responsive";
+import "../../images/image-hero-desktop.png";
 type Props = {};
 
 export default function MainLayout({}: Props) {
@@ -35,13 +36,13 @@ export default function MainLayout({}: Props) {
 
       {isDesktop ? (
         <img
-          src="/public/images/image-hero-mobile.png"
+          src="../../images/image-hero-mobile.png"
           alt="Mobile Image"
           className="desktop-image banner 2"
         />
       ) : (
         <img
-          src="/public/images/image-hero-desktop.png"
+          src="../../images/image-hero-desktop.png"
           alt="Desktop Image"
           className="mobile-image banner "
         />
