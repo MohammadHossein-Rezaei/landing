@@ -1,9 +1,13 @@
 import "./mainLayout.css";
 import { useMediaQuery } from "react-responsive";
 import logomain from "/images/image-hero-desktop.png";
-type Props = {};
+import logomainDesk from "/images/image-hero-desktop.png";
+import maker from "/images/client-maker.svg";
+import meet from "/images/client-meet.svg";
+import audi from "/images/client-audiophile.svg";
+import databiz from "/images/client-databiz.svg";
 
-export default function MainLayout({}: Props) {
+export default function MainLayout() {
   const isDesktop = useMediaQuery({ minWidth: 675 });
   return (
     <div className="main-layout">
@@ -20,23 +24,23 @@ export default function MainLayout({}: Props) {
         </button>
         <ul className="list-main">
           <li>
-            <img src="/images/client-databiz.svg" alt="databiz" />
+            <img src={databiz} alt="databiz" />
           </li>
           <li>
-            <img src="/images/client-audiophile.svg" alt="audiophile" />
+            <img src={audi} alt="audiophile" />
           </li>
           <li>
-            <img src="/images/client-meet.svg" alt="meet" />
+            <img src={meet} alt="meet" />
           </li>
           <li>
-            <img src="/images/client-maker.svg" alt="maker" />
+            <img src={maker} alt="maker" />
           </li>
         </ul>
       </div>
 
       {isDesktop ? (
         <img
-          src="/images/image-hero-mobile.png"
+          src={logomainDesk}
           alt="Mobile Image"
           className="desktop-image banner 2"
         />

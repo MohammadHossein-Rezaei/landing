@@ -1,9 +1,13 @@
 import { useState } from "react";
 import "./navLists.css";
+import todo from "/images/icon-todo.svg";
+import calendar from "/images/icon-calendar.svg";
+import reminders from "/images/icon-reminders.svg";
+import planning from "/images/icon-planning.svg";
+import arrowUp from "/images/icon-arrow-up.svg";
+import arrowDown from "/images/icon-arrow-down.svg";
 
-type Props = {};
-
-export default function NavLists({}: Props) {
+export default function NavLists() {
   const [isFeaturesOpen, setFeaturesOpen] = useState(false);
   const [isCompanyOpen, setCompanyOpen] = useState(false);
   console.log(isFeaturesOpen);
@@ -21,30 +25,26 @@ export default function NavLists({}: Props) {
           Features
           <img
             className="icon-nav"
-            src={
-              isFeaturesOpen
-                ? "/images/icon-arrow-up.svg"
-                : "/images/icon-arrow-down.svg"
-            }
+            src={isFeaturesOpen ? arrowUp : arrowDown}
             alt={isFeaturesOpen ? "open icon" : "close icon"}
           />
         </div>
         {isFeaturesOpen && (
           <ul className="dropdown-menu">
             <li className="dropdown-item">
-              <img src="/images/icon-todo.svg" alt="" />
+              <img src={todo} alt="todo" />
               <h5>Todo List</h5>
             </li>
             <li className="dropdown-item">
-              <img src="/images/icon-calendar.svg" alt="" />
+              <img src={calendar} alt="calendar" />
               <h5>Calender</h5>
             </li>
             <li className="dropdown-item">
-              <img src="/images/icon-reminders.svg" alt="" />
+              <img src={reminders} alt="reminder" />
               <h5>Reminders</h5>
             </li>
             <li className="dropdown-item">
-              <img src="/images/icon-planning.svg" alt="" />
+              <img src={planning} alt="planning" />
               <h5>Planning</h5>
             </li>
           </ul>
@@ -63,11 +63,7 @@ export default function NavLists({}: Props) {
           Company
           <img
             className="icon-nav"
-            src={
-              isCompanyOpen
-                ? "/images/icon-arrow-up.svg"
-                : "/images/icon-arrow-down.svg"
-            }
+            src={isCompanyOpen ? arrowUp : arrowDown}
             alt={isCompanyOpen ? "open icon" : "close icon"}
           />
         </div>
