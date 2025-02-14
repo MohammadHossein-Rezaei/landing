@@ -72,7 +72,6 @@ export default function NavLists() {
             <li className="dropdown-item-company">History</li>
             <li className="dropdown-item-company">Our Team</li>
             <li className="dropdown-item-company">Blog</li>
-            <li>vase kole omr khandehat pelane</li>
           </ul>
         )}
       </li>
