@@ -1,5 +1,6 @@
 import "./mainLayout.css";
 import { useMediaQuery } from "react-responsive";
+import logomain from "/images/image-hero-desktop.png";
 type Props = {};
 
 export default function MainLayout({}: Props) {
@@ -41,7 +42,7 @@ export default function MainLayout({}: Props) {
         />
       ) : (
         <img
-          src="/images/image-hero-desktop.png"
+          src={logomain}
           alt="Desktop Image"
           className="mobile-image banner "
         />
