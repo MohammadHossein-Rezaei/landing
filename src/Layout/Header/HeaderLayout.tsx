@@ -17,9 +17,9 @@ export default function HeaderLayout({}: Props) {
       <nav className={`navbar ${isMenuOpen ? "open" : ""}`}>
         <div className="menu-icon" onClick={toggleMenu}>
           {isMenuOpen ? (
-            <img src="/public/images/icon-close-menu.svg" alt="" />
+            <img src="/images/icon-close-menu.svg" alt="" />
           ) : (
-            <img src="/public/images/icon-menu.svg" alt="" />
+            <img src="/images/icon-menu.svg" alt="" />
           )}
         </div>
 

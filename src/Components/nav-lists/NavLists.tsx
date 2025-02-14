@@ -23,8 +23,8 @@ export default function NavLists({}: Props) {
             className="icon-nav"
             src={
               isFeaturesOpen
-                ? "/public/images/icon-arrow-up.svg"
-                : "/public/images/icon-arrow-down.svg"
+                ? "/images/icon-arrow-up.svg"
+                : "/images/icon-arrow-down.svg"
             }
             alt={isFeaturesOpen ? "open icon" : "close icon"}
           />
@@ -32,19 +32,19 @@ export default function NavLists({}: Props) {
         {isFeaturesOpen && (
           <ul className="dropdown-menu">
             <li className="dropdown-item">
-              <img src="/public/images/icon-todo.svg" alt="" />
+              <img src="/images/icon-todo.svg" alt="" />
               <h5>Todo List</h5>
             </li>
             <li className="dropdown-item">
-              <img src="/public/images/icon-calendar.svg" alt="" />
+              <img src="/images/icon-calendar.svg" alt="" />
               <h5>Calender</h5>
             </li>
             <li className="dropdown-item">
-              <img src="/public/images/icon-reminders.svg" alt="" />
+              <img src="/images/icon-reminders.svg" alt="" />
               <h5>Reminders</h5>
             </li>
             <li className="dropdown-item">
-              <img src="/public/images/icon-planning.svg" alt="" />
+              <img src="/images/icon-planning.svg" alt="" />
               <h5>Planning</h5>
             </li>
           </ul>
@@ -65,8 +65,8 @@ export default function NavLists({}: Props) {
             className="icon-nav"
             src={
               isCompanyOpen
-                ? "/public/images/icon-arrow-up.svg"
-                : "/public/images/icon-arrow-down.svg"
+                ? "/images/icon-arrow-up.svg"
+                : "/images/icon-arrow-down.svg"
             }
             alt={isCompanyOpen ? "open icon" : "close icon"}
           />

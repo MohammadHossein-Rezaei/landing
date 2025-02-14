@@ -1,6 +1,5 @@
 import "./mainLayout.css";
 import { useMediaQuery } from "react-responsive";
-import "../../images/image-hero-desktop.png";
 type Props = {};
 
 export default function MainLayout({}: Props) {
@@ -20,29 +19,29 @@ export default function MainLayout({}: Props) {
         </button>
         <ul className="list-main">
           <li>
-            <img src="/public/images/client-databiz.svg" alt="databiz" />
+            <img src="/images/client-databiz.svg" alt="databiz" />
           </li>
           <li>
-            <img src="/public/images/client-audiophile.svg" alt="audiophile" />
+            <img src="/images/client-audiophile.svg" alt="audiophile" />
           </li>
           <li>
-            <img src="/public/images/client-meet.svg" alt="meet" />
+            <img src="/images/client-meet.svg" alt="meet" />
           </li>
           <li>
-            <img src="/public/images/client-maker.svg" alt="maker" />
+            <img src="/images/client-maker.svg" alt="maker" />
           </li>
         </ul>
       </div>
 
       {isDesktop ? (
         <img
-          src="../../images/image-hero-mobile.png"
+          src="/images/image-hero-mobile.png"
           alt="Mobile Image"
           className="desktop-image banner 2"
         />
       ) : (
         <img
-          src="../../images/image-hero-desktop.png"
+          src="/images/image-hero-desktop.png"
           alt="Desktop Image"
           className="mobile-image banner "
         />
